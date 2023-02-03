@@ -15,7 +15,21 @@ public class Main {
         int input = scanner.nextInt();
         System.out.println(input);*/
 
-        System.out.println(new java.util.Scanner(System.in).nextInt());
+        // System.out.println(new java.util.Scanner(System.in).nextInt());
+
+        SpeakingEntity person = new SpeakingEntity() {
+            @Override
+            public void sayHello() {
+                System.out.println("Hello!");
+            }
+
+            @Override
+            public void sayBye() {
+                System.out.println("Bye!");
+            }
+        };
+        person.sayHello();
+        person.sayBye();
 
     }
 }

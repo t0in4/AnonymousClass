@@ -1,3 +1,6 @@
 package anonim;
-public class SpeakingEntity {
+interface SpeakingEntity {
+    void sayHello();
+    void sayBye();
+
 }
